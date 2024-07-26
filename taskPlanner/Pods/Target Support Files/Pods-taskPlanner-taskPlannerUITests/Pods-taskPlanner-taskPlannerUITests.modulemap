@@ -1,0 +1,6 @@
+module Pods_taskPlanner_taskPlannerUITests {
+  umbrella header "Pods-taskPlanner-taskPlannerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

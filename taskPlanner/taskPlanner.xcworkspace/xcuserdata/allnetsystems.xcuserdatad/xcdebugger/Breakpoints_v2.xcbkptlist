@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EFF49BE4-F323-4F41-8213-C747C9DB6467"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE26D521-356E-49CC-9389-D1B911AC631D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "didUpdateWeather(_:weather:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FE26D521-356E-49CC-9389-D1B911AC631D - ced5060a1fc823a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "220"
+                  endingLineNumber = "220"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "FE26D521-356E-49CC-9389-D1B911AC631D - 94720686877a53e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "220"
+                  endingLineNumber = "220"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8442A7B5-B667-4775-8054-99CE6CB67CA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "didUpdateWeather(_:weather:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8442A7B5-B667-4775-8054-99CE6CB67CA1 - 947206868765ac4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "223"
+                  endingLineNumber = "223"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "8442A7B5-B667-4775-8054-99CE6CB67CA1 - 947206868765ac4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "223"
+                  endingLineNumber = "223"
+                  offsetFromSymbolStart = "636">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
