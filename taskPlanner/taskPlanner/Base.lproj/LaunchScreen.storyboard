@@ -36,7 +36,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="plan" width="360" height="360"/>
+        <image name="plan" width="169.66667175292969" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allow Application to access user location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your location to provide weather updates even when the app is in the background</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

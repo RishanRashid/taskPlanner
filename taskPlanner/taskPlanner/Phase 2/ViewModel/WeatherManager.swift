@@ -21,6 +21,7 @@ struct WeatherManager {
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)q=\(cityName)"
         performRequest(urlString: urlString)
+        print("urlString")
         print(urlString)
     }
     

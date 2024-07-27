@@ -36,25 +36,28 @@ class DailyTasksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let nibName = UINib(nibName: TodoTableViewCell.nibName, bundle: nil)
-        tblTodo.register(nibName, forCellReuseIdentifier: TodoTableViewCell.identifier)
-        tblTodo.rowHeight = UITableView.automaticDimension
+        setupWeather()
         setupBindings()
-        
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
-        
-        weatherManager.delegate = self
+        setupTable()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tblTodo.reloadData()
     }
+    func setupWeather() {
+        locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.requestLocation()
+            weatherManager.delegate = self
+    }
     
-    // MARK: - UI Binding
+    func setupTable() {
+        let nibName = UINib(nibName: TodoTableViewCell.nibName, bundle: nil)
+        tblTodo.register(nibName, forCellReuseIdentifier: TodoTableViewCell.identifier)
+        tblTodo.rowHeight = UITableView.automaticDimension
+    }
     
     func setupBindings() {
         dataSource = RxTableViewSectionedReloadDataSource<Task> { dataSource, tableView, indexPath, item in
@@ -127,7 +130,7 @@ class DailyTasksViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
-        
+    
     @IBAction func addTaskButtonPressed(_ sender: UIButton) {
         guard let addTaskVC = self.storyboard?.instantiateViewController(identifier: AddTaskViewController.storyboardID) as? AddTaskViewController else { return }
         addTaskVC.delegate = self
@@ -162,9 +165,9 @@ class DailyTasksViewController: UIViewController {
         guard let indexPath = sender.indexPath else { return }
         
         if indexPath.section == 0 {
-            viewModel.changeComplete(section: .scheduled, row: indexPath.row)
+            viewModel.changeComplete(tabBarItem: .allTasks, row: indexPath.row)
         } else {
-            viewModel.changeComplete(section: .anytime, row: indexPath.row)
+            viewModel.changeComplete(tabBarItem: .completed, row: indexPath.row)
         }
     }
 }
@@ -203,16 +206,11 @@ extension DailyTasksViewController: CLLocationManagerDelegate, WeatherManagerDel
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
+            print("Location updated: \(location.coordinate.latitude), \(location.coordinate.longitude)")
             weatherManager.fetchWeather(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         }
     }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Failed to find user's location: \(error.localizedDescription)")
-    }
-    
-    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) 
-    {
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
             self.locationManager.stopUpdatingLocation()
             self.weatherLabel.text = weather.tempratureString
@@ -220,10 +218,29 @@ extension DailyTasksViewController: CLLocationManagerDelegate, WeatherManagerDel
             self.cityname.text = weather.name
         }
     }
-    
+
     func didFailWithError(error: Error) {
         print("Failed to fetch weather: \(error.localizedDescription)")
     }
+
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        if let clError = error as? CLError {
+            switch clError.code {
+            case .denied:
+                print("Location access denied. Please enable location services for this app in Settings.")
+            case .locationUnknown:
+                print("Location data is currently unavailable.")
+            case .network:
+                print("Network error occurred while retrieving location.")
+            default:
+                print("An error occurred: \(error.localizedDescription)")
+            }
+        } else {
+            print("Failed to find user's location: \(error.localizedDescription)")
+        }
+    }
+
 }
 
 

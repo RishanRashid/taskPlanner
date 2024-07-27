@@ -7,47 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FE26D521-356E-49CC-9389-D1B911AC631D"
-            shouldBeEnabled = "No"
+            uuid = "920DF369-AD8A-497A-9FF7-487AAD36868C"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
-            landmarkName = "didUpdateWeather(_:weather:)"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FE26D521-356E-49CC-9389-D1B911AC631D - ced5060a1fc823a9"
+                  uuid = "920DF369-AD8A-497A-9FF7-487AAD36868C - 441940cbed8e3c39"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "taskPlanner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "220"
-                  endingLineNumber = "220"
-                  offsetFromSymbolStart = "228">
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "84">
                </Location>
                <Location
-                  uuid = "FE26D521-356E-49CC-9389-D1B911AC631D - 94720686877a53e8"
+                  uuid = "920DF369-AD8A-497A-9FF7-487AAD36868C - 441940cbed8e3c5c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "taskPlanner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "220"
-                  endingLineNumber = "220"
-                  offsetFromSymbolStart = "148">
+                  startingLineNumber = "209"
+                  endingLineNumber = "209"
+                  offsetFromSymbolStart = "284">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,39 +55,120 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8442A7B5-B667-4775-8054-99CE6CB67CA1"
-            shouldBeEnabled = "No"
+            uuid = "CA023D3A-8BE8-4D4E-B2A5-E4D47FA74C69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase 2/ViewModel/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchWeather(cityName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CA023D3A-8BE8-4D4E-B2A5-E4D47FA74C69 - d3402b8b91aa91d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.WeatherManager.fetchWeather(cityName: Swift.String) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase%202/ViewModel/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  uuid = "CA023D3A-8BE8-4D4E-B2A5-E4D47FA74C69 - d3402b8b91aa91d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.WeatherManager.fetchWeather(cityName: Swift.String) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase%202/ViewModel/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "676">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0FB2767-93ED-4B3E-849B-3F9F9F2E90CD"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
-            landmarkName = "didUpdateWeather(_:weather:)"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8442A7B5-B667-4775-8054-99CE6CB67CA1 - 947206868765ac4d"
+                  uuid = "F0FB2767-93ED-4B3E-849B-3F9F9F2E90CD - 441940cbed8e3cbd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "taskPlanner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "223"
-                  endingLineNumber = "223"
-                  offsetFromSymbolStart = "192">
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "856">
                </Location>
                <Location
-                  uuid = "8442A7B5-B667-4775-8054-99CE6CB67CA1 - 947206868765ac4d"
+                  uuid = "F0FB2767-93ED-4B3E-849B-3F9F9F2E90CD - 441940cbed8e3cbd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in taskPlanner.DailyTasksViewController.didUpdateWeather(_: taskPlanner.WeatherManager, weather: taskPlanner.WeatherModel) -&gt; ()"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "740">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A77665EF-92CE-4F35-A5BE-42742B81E570"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "didFailWithError(error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A77665EF-92CE-4F35-A5BE-42742B81E570 - e0e42f7a57823d8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.didFailWithError(error: Swift.Error) -&gt; ()"
                   moduleName = "taskPlanner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
@@ -95,9 +176,232 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "223"
                   endingLineNumber = "223"
-                  offsetFromSymbolStart = "636">
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "A77665EF-92CE-4F35-A5BE-42742B81E570 - e0e42f7a57823d8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.didFailWithError(error: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "223"
+                  endingLineNumber = "223"
+                  offsetFromSymbolStart = "128">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C83179AB-EA92-46F3-94E0-BC8C407B52B9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "locationManager(_:didFailWithError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C83179AB-EA92-46F3-94E0-BC8C407B52B9 - ba29a51ec5cad5ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "752">
+               </Location>
+               <Location
+                  uuid = "C83179AB-EA92-46F3-94E0-BC8C407B52B9 - ba29a51ec5cad5ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F61AB7D-6D22-4734-9D3D-AD8038A84700"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "locationManager(_:didFailWithError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F61AB7D-6D22-4734-9D3D-AD8038A84700 - ba29a51ec5cad52e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "233"
+                  endingLineNumber = "233"
+                  offsetFromSymbolStart = "1004">
+               </Location>
+               <Location
+                  uuid = "0F61AB7D-6D22-4734-9D3D-AD8038A84700 - ba29a51ec5cad52e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "233"
+                  endingLineNumber = "233"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "310611E9-C451-49BA-A018-0D07335D4499"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "locationManager(_:didFailWithError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "310611E9-C451-49BA-A018-0D07335D4499 - ba29a51ec5cad560"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+               <Location
+                  uuid = "310611E9-C451-49BA-A018-0D07335D4499 - ba29a51ec5cad560"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "1064">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A83C4D0F-239D-4B02-969E-B14E346A3630"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "locationManager(_:didFailWithError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A83C4D0F-239D-4B02-969E-B14E346A3630 - ba29a51ec5cad683"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "2000">
+               </Location>
+               <Location
+                  uuid = "A83C4D0F-239D-4B02-969E-B14E346A3630 - ba29a51ec5cad6a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskPlanner.DailyTasksViewController.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "taskPlanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/allnetsystems/Desktop/taskPlanner/taskPlanner/taskPlanner/Phase1/ViewController/DailyTasksViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "1332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCFE08CE-B148-47E2-B99E-D269E7E492EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskPlanner/Phase 2/ViewModel/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchWeather(cityName:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Daily Tasks-->
+        <!--All Tasks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DailyTasksViewController" customModule="taskPlanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chennai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4J-Of-8ZQ">
                                         <rect key="frame" x="8" y="12" width="138" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="138" id="2tY-hc-u6g"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="2tY-hc-u6g"/>
                                             <constraint firstAttribute="height" constant="21" id="Y4J-am-uQd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -50,16 +50,18 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36 C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyj-uf-hgQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GXO-Au-ihC"/>
-                                                    <constraint firstAttribute="width" constant="70" id="Sav-Bt-o2R"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="Sav-Bt-o2R"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="54q-QS-4Wo">
                                                 <rect key="frame" x="80" y="0.99999999999999645" width="40" height="38.333333333333329"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="wKO-8v-cJF"/>
                                                 </constraints>
@@ -93,7 +95,7 @@
                             <constraint firstItem="YY3-J5-Z7x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zxM-Rn-oTo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Daily Tasks" id="hrW-qD-sAH">
+                    <navigationItem key="navigationItem" title="All Tasks" id="hrW-qD-sAH">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="i01-96-QcM">
                             <connections>
                                 <action selector="editTableButtonPressed:" destination="BYZ-38-t0r" id="Bb1-4y-Cs5"/>
@@ -108,10 +110,10 @@
                     <connections>
                         <outlet property="btnAdd" destination="j5D-x8-VZE" id="xBH-cu-tRJ"/>
                         <outlet property="btnEditTable" destination="i01-96-QcM" id="sbQ-HD-j29"/>
-                        <outlet property="cityname" destination="E4J-Of-8ZQ" id="QRH-0v-EVm"/>
+                        <outlet property="cityname" destination="E4J-Of-8ZQ" id="tHw-bY-tTe"/>
                         <outlet property="tblTodo" destination="wtZ-Zd-BF7" id="nG4-98-SsW"/>
-                        <outlet property="weatherImage" destination="54q-QS-4Wo" id="9PR-T3-5TU"/>
-                        <outlet property="weatherLabel" destination="uyj-uf-hgQ" id="Uwh-t3-aa8"/>
+                        <outlet property="weatherImage" destination="54q-QS-4Wo" id="LSF-ix-v2b"/>
+                        <outlet property="weatherLabel" destination="uyj-uf-hgQ" id="xLP-2s-32B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -303,9 +305,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xV1-Da-VqS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="All Tasks" image="list.bullet.clipboard" catalog="system" selectedImage="list.bullet.clipboard.fill" id="oR6-ty-Ior"/>
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tQU-Tf-NCi">
                         <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -364,14 +368,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="xV1-Da-VqS" kind="relationship" relationship="viewControllers" id="SIm-2h-LcO"/>
-                        <segue destination="Blq-6n-fgf" kind="relationship" relationship="viewControllers" id="nWN-lV-21w"/>
+                        <segue destination="Dwm-lm-hBi" kind="relationship" relationship="viewControllers" id="nWN-lV-21w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQU-EM-Cub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.4384236453202"/>
         </scene>
-        <!--Daily Tasks-->
+        <!--Completed Tasks-->
         <scene sceneID="CLj-G1-Nmu">
             <objects>
                 <viewController storyboardIdentifier="CompletedViewController" id="Blq-6n-fgf" customClass="CompletedViewController" customModule="taskPlanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -381,6 +385,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="auh-di-lf0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hfI-dk-8qB"/>
@@ -392,18 +397,46 @@
                             <constraint firstItem="auh-di-lf0" firstAttribute="trailing" secondItem="hfI-dk-8qB" secondAttribute="trailing" id="ZNV-zL-0QI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Completed Tasks" image="clock" catalog="system" selectedImage="clock.fill" id="hiM-jg-ERQ"/>
-                    <navigationItem key="navigationItem" title="Daily Tasks" id="eM4-nf-3pJ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="ZYa-wO-nPY"/>
-                        <barButtonItem key="rightBarButtonItem" image="calendar" catalog="system" id="A8f-xJ-iDp"/>
+                    <navigationItem key="navigationItem" title="Completed Tasks" id="eM4-nf-3pJ">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZYa-wO-nPY">
+                            <connections>
+                                <action selector="backButton:" destination="Blq-6n-fgf" id="PRg-bv-uqW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="calendar" catalog="system" id="A8f-xJ-iDp">
+                            <connections>
+                                <action selector="calendarButtonPressed:" destination="Blq-6n-fgf" id="jxp-UI-ghh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tblCompletedTasks" destination="auh-di-lf0" id="QXJ-QF-us5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsT-QG-Lnc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="-898"/>
+            <point key="canvasLocation" x="2260" y="-898.52216748768478"/>
+        </scene>
+        <!--Completed Tasks-->
+        <scene sceneID="rlZ-UZ-Y1A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dwm-lm-hBi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Completed Tasks" image="clock" catalog="system" selectedImage="clock.fill" id="hiM-jg-ERQ"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Es-bG-5kx">
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Blq-6n-fgf" kind="relationship" relationship="rootViewController" id="9Uf-32-6PN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fas-Oa-syU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320.8" y="-898.52216748768478"/>
         </scene>
     </scenes>
     <resources>
@@ -425,8 +458,14 @@
         <systemColor name="systemGray3Color">
             <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
